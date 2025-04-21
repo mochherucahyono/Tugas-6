@@ -1,19 +1,27 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #fff3e0; /* oranye pastel */
 }
 
 header {
-  background: #333;
+  background: linear-gradient(
+    135deg,
+    #ff8c42,
+    #d2691e
+  ); /* oranye ke coklat tua */
   color: white;
   padding: 20px;
   text-align: center;
 }
 
 nav {
-  background: #444;
+  background: linear-gradient(
+    to right,
+    #ffb347,
+    #ffcc33
+  ); /* gradasi oranye ke kuning */
   padding: 10px;
 }
 
@@ -30,9 +38,18 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: #5a381e;
   text-decoration: none;
   font-size: 18px;
+  font-weight: 600;
+  transition: transform 0.3s ease, font-size 0.3s ease;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .container {
@@ -42,18 +59,22 @@ nav ul li a {
 
 .sidebar {
   width: 25%;
-  background: #ddd;
+  background: #ffe0b2; /* krem-oranye muda */
   padding: 20px;
 }
 
 .content {
   width: 75%;
-  background: white;
+  background: #fffaf3; /* putih ke krem */
   padding: 20px;
 }
 
 footer {
-  background: #333;
+  background: linear-gradient(
+    to right,
+    #a0522d,
+    #8b4513
+  ); /* gradasi coklat tua */
   color: white;
   text-align: center;
   padding: 10px;
@@ -64,10 +85,10 @@ footer {
 
 /* Form Kontak */
 #formWA {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 30px 25px;
   border-radius: 10px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 20px rgba(255, 140, 0, 0.15); /* bayangan oranye */
   width: 100%;
   max-width: 500px;
 }
@@ -76,14 +97,14 @@ footer {
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
-  color: #333;
+  color: #6b3e26; /* coklat gelap */
 }
 
 #formWA input,
 #formWA textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #ffcc99;
   border-radius: 6px;
   margin-bottom: 20px;
   box-sizing: border-box;
@@ -92,9 +113,9 @@ footer {
 
 #formWA input:focus,
 #formWA textarea:focus {
-  border-color: #25d366;
+  border-color: #ff8c42;
   outline: none;
-  box-shadow: 0 0 4px rgba(37, 211, 102, 0.3);
+  box-shadow: 0 0 4px rgba(255, 140, 66, 0.4);
 }
 
 #formWA button {
@@ -105,9 +126,12 @@ footer {
   border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease, font-size 0.3s ease;
+  display: inline-block;
 }
 
 #formWA button:hover {
-  background-color: #1ebe5d;
+  background-color: #25d366;
+  transform: scale(1.1);
+  font-weight: sans-serif;
 }
