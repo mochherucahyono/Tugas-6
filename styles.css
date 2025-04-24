@@ -1,5 +1,5 @@
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
   margin: 0;
   padding: 0;
   background-color: #fff3e0; /* oranye pastel */
@@ -7,12 +7,15 @@ body {
 
 header {
   background: linear-gradient(
-    135deg,
-    #ff8c42,
-    #d2691e
-  ); /* oranye ke coklat tua */
+      135deg,
+      rgba(51, 11, 11, 0.6),
+      rgba(29, 17, 5, 0.6)
+    ),
+    url("header.jpg");
+  background-size: cover;
+  background-position: center;
   color: white;
-  padding: 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 
@@ -58,8 +61,16 @@ nav ul li a:hover {
 }
 
 .sidebar {
+  background: linear-gradient(
+      135deg,
+      rgba(51, 11, 11, 0.6),
+      rgba(29, 17, 5, 0.6)
+    ),
+    url("menu.jpg");
+  background-size: 200px;
+  background-position: right;
+  color: white;
   width: 25%;
-  background: #ffe0b2; /* krem-oranye muda */
   padding: 20px;
 }
 
@@ -85,7 +96,6 @@ footer {
 
 /* Form Kontak */
 #formWA {
-  background-color: #ffffff;
   padding: 30px 25px;
   border-radius: 10px;
   box-shadow: 0 6px 20px rgba(255, 140, 0, 0.15); /* bayangan oranye */
@@ -122,9 +132,9 @@ footer {
   background-color: #25d366;
   color: white;
   border: none;
-  padding: 12px 25px;
+  padding: 10px 25px;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
   transition: transform 0.3s ease, font-size 0.3s ease;
   display: inline-block;
@@ -134,4 +144,10 @@ footer {
   background-color: #25d366;
   transform: scale(1.1);
   font-weight: sans-serif;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6); /* Hitam transparan */
+  padding: 15px;
+  border-radius: 10px;
 }
