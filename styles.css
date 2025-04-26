@@ -1,22 +1,24 @@
 body {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #fff3e0; /* oranye pastel */
+  line-height: 1.6;
 }
 
 header {
   background: linear-gradient(
       135deg,
-      rgba(51, 11, 11, 0.6),
-      rgba(29, 17, 5, 0.6)
+      rgba(51, 11, 11, 0.8),
+      rgba(29, 17, 5, 0.8)
     ),
     url("header.jpg");
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 50px 20px;
+  padding: 60px 20px;
   text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 nav {
@@ -25,7 +27,8 @@ nav {
     #ffb347,
     #ffcc33
   ); /* gradasi oranye ke kuning */
-  padding: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -37,15 +40,15 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 nav ul li a {
   color: #5a381e;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
-  transition: transform 0.3s ease, font-size 0.3s ease;
+  transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
   display: inline-block;
 }
 
@@ -53,6 +56,7 @@ nav ul li a:hover {
   transform: scale(1.1);
   font-weight: bold;
   text-decoration: underline;
+  color: #d95f0e; /* Warna saat hover */
 }
 
 .container {
@@ -63,21 +67,25 @@ nav ul li a:hover {
 .sidebar {
   background: linear-gradient(
       135deg,
-      rgba(51, 11, 11, 0.6),
-      rgba(29, 17, 5, 0.6)
+      rgba(51, 11, 11, 0.8),
+      rgba(29, 17, 5, 0.8)
     ),
     url("menu.jpg");
-  background-size: 200px;
-  background-position: right;
+  background-size: cover;
+  background-position: center;
   color: white;
   width: 25%;
   padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 
 .content {
-  width: 75%;
+  width: 70%;
   background: #fffaf3; /* putih ke krem */
   padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -88,10 +96,11 @@ footer {
   ); /* gradasi coklat tua */
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   position: relative;
   bottom: 0;
   width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Form Kontak */
@@ -101,6 +110,7 @@ footer {
   box-shadow: 0 6px 20px rgba(255, 140, 0, 0.15); /* bayangan oranye */
   width: 100%;
   max-width: 500px;
+  background: #fff; /* Latar belakang putih untuk form */
 }
 
 #formWA label {
@@ -119,6 +129,7 @@ footer {
   margin-bottom: 20px;
   box-sizing: border-box;
   font-size: 16px;
+  transition: border-color 0.3s ease;
 }
 
 #formWA input:focus,
@@ -136,18 +147,22 @@ footer {
   border-radius: 6px;
   font-size: 15px;
   cursor: pointer;
-  transition: transform 0.3s ease, font-size 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
   display: inline-block;
 }
 
 #formWA button:hover {
-  background-color: #25d366;
-  transform: scale(1.1);
-  font-weight: sans-serif;
+  background-color: #1ebc5a; /* Warna saat hover */
+  transform: scale(1.05);
 }
 
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.6); /* Hitam transparan */
+  background-color: rgba(0, 0, 0, 0.7); /* Hitam transparan lebih gelap */
   padding: 15px;
   border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-caption:hover {
+  background-color: rgba(0, 0, 0, 0.9); /* Gelap saat hover */
 }
